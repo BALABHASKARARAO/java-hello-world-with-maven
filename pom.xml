@@ -22,6 +22,16 @@
            </dependency>
        </dependencies>
        <!-- end::joda[] -->
+    <distributionManagement>
+         <snapshotRepository>
+              <id>bala-s3-maven-dependencies</id>
+              <url>s3://bala-s3-maven-dependencies/snapshot</url>
+          </snapshotRepository>
+        <repository>
+             <id>bala-s3-maven-dependencies</id>
+             <url>s3://bala-s3-maven-dependencies/release</url>
+        </repository>
+    </distributionManagement>
        
     <build>
         <plugins>
